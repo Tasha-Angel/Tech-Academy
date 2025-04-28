@@ -78,7 +78,14 @@ header {
 
 .about-hero p {
   font-size: 1.2rem;
+}.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* optional: controls size */
 }
+
+
 
 /* Our Story Section */
 .our-story .story-grid {
