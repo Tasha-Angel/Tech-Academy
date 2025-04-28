@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BreakThrough Tech Academy | Courses</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">BreakThrough Tech Academy</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button id="darkModeToggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+  </nav>
+</header>
+
+<section class="courses-hero">
+  <div class="container">
+    <h1>Our Courses</h1>
+    <p>Designed to get you job-ready with practical, industry-relevant skills</p>
+  </div>
+</section>
+
+<section class="course-categories">
+  <div class="container">
+    <div class="category-tabs">
+      <button class="tab-btn active" data-category="all">All Courses</button>
+      <button class="tab-btn" data-category="beginner">Beginner</button>
+      <button class="tab-btn" data-category="intermediate">Intermediate</button>
+      <button class="tab-btn" data-category="advanced">Advanced</button>
+    </div>
+    
+    <div class="search-filter">
+      <input type="text" id="courseSearch" placeholder="Search courses...">
+      <select id="courseFilter">
+        <option value="">Filter by Duration</option>
+        <option value="3">Under 3 Months</option>
+        <option value="6">3-6 Months</option>
+        <option value="12">6-12 Months</option>
+        <option value="13">1 Year+</option>
+      </select>
+    </div>
+
+
+
+    
+    
+    <div class="courses-grid">
+      <!-- Web Development -->
+      <div class="course-card" data-level="beginner" data-duration="6">
+        <div class="course-image">
+          <img src="webpics/webdpic.PNG" alt="Web Development">
+          
+          <span class="level-badge beginner">Beginner</span>
+        </div>
+        <div class="course-content">
+          <h3>Full Stack Web Development</h3>
+          <p class="description">Master HTML, CSS, JavaScript, React, Node.js, and MongoDB to build modern web applications.</p>
+          <div class="course-meta">
+            <span><i class="far fa-clock"></i> 6 Months</span>
+            <span><i class="fas fa-user-graduate"></i> Beginner</span>
+            <span><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <div class="course-actions">
+            <a href="#" class="btn btn-outline">Learn More</a>
+            <a href="#" class="btn btn-primary">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Data Science -->
+      <div class="course-card" data-level="intermediate" data-duration="9">
+        <div class="course-image">
+          <img src="webpics/webdpic5.PNG" alt="Data Science">
+          <span class="level-badge intermediate">Intermediate</span>
+        </div>
+        <div class="course-content">
+          <h3>Data Science & Analytics</h3>
+          <p class="description">Learn Python, SQL, Pandas, and machine learning to analyze and visualize complex data.</p>
+          <div class="course-meta">
+            <span><i class="far fa-clock"></i> 9 Months</span>
+            <span><i class="fas fa-user-graduate"></i> Intermediate</span>
+            <span><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <div class="course-actions">
+            <a href="#" class="btn btn-outline">Learn More</a>
+            <a href="#" class="btn btn-primary">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Cybersecurity -->
+      <div class="course-card" data-level="advanced" data-duration="12">
+        <div class="course-image">
+          <img src="webpics/webdpic9.PNG" alt="Cybersecurity">
+          <span class="level-badge advanced">Advanced</span>
+        </div>
+        <div class="course-content">
+          <h3>Cybersecurity Professional</h3>
+          <p class="description">Develop skills in ethical hacking, network security, and threat detection.</p>
+          <div class="course-meta">
+            <span><i class="far fa-clock"></i> 12 Months</span>
+            <span><i class="fas fa-user-graduate"></i> Advanced</span>
+            <span><i class="fas fa-certificate"></i> Diploma</span>
+          </div>
+          <div class="course-actions">
+            <a href="#" class="btn btn-outline">Learn More</a>
+            <a href="#" class="btn btn-primary">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile App Development -->
+      <div class="course-card" data-level="intermediate" data-duration="6">
+        <div class="course-image">
+          <img src="webpics/webdpic7.PNG" alt="Mobile App Development">
+          <span class="level-badge intermediate">Intermediate</span>
+        </div>
+        <div class="course-content">
+          <h3>Mobile App Development</h3>
+          <p class="description">Build iOS and Android apps using React Native and modern development tools.</p>
+          <div class="course-meta">
+            <span><i class="far fa-clock"></i> 6 Months</span>
+            <span><i class="fas fa-user-graduate"></i> Intermediate</span>
+            <span><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <div class="course-actions">
+            <a href="#" class="btn btn-outline">Learn More</a>
+            <a href="#" class="btn btn-primary">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- AI & Machine Learning -->
+      <div class="course-card" data-level="advanced" data-duration="12">
+        <div class="course-image">
+          <img src="webpics/webdpic6.PNG" alt="AI & Machine Learning">
+          <span class="level-badge advanced">Advanced</span>
+        </div>
+        <div class="course-content">
+          <h3>AI & Machine Learning</h3>
+          <p class="description">Master TensorFlow, PyTorch, and neural networks to build intelligent systems.</p>
+          <div class="course-meta">
+            <span><i class="far fa-clock"></i> 12 Months</span>
+            <span><i class="fas fa-user-graduate"></i> Advanced</span>
+            <span><i class="fas fa-certificate"></i> Diploma</span>
+          </div>
+          <div class="course-actions">
+            <a href="#" class="btn btn-outline">Learn More</a>
+            <a href="#" class="btn btn-primary">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Cloud Computing -->
+      <div class="course-card" data-level="intermediate" data-duration="6">
+        <div class="course-image">
+          <img src="webpics/webdpic3.PNG" alt="Cloud Computing">
+          <span class="level-badge intermediate">Intermediate</span>
+        </div>
+        <div class="course-content">
+          <h3>Cloud Computing with AWS</h3>
+          <p class="description">Learn to deploy, manage, and scale applications using Amazon Web Services.</p>
+          <div class="course-meta">
+            <span><i class="far fa-clock"></i> 6 Months</span>
+            <span><i class="fas fa-user-graduate"></i> Intermediate</span>
+            <span><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <div class="course-actions">
+            <a href="#" class="btn btn-outline">Learn More</a>
+            <a href="#" class="btn btn-primary">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- UI/UX Design -->
+      <div class="course-card" data-level="beginner" data-duration="3">
+        <div class="course-image">
+          <img src="webpics/webpic4.PNG" alt="UI/UX Design">
+          <span class="level-badge beginner">Beginner</span>
+        </div>
+        <div class="course-content">
+          <h3>UI/UX Design Fundamentals</h3>
+          <p class="description">Learn user-centered design principles, wireframing, and prototyping with Figma.</p>
+          <div class="course-meta">
+            <span><i class="far fa-clock"></i> 3 Months</span>
+            <span><i class="fas fa-user-graduate"></i> Beginner</span>
+            <span><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <div class="course-actions">
+            <a href="#" class="btn btn-outline">Learn More</a>
+            <a href="#" class="btn btn-primary">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Programming Fundamentals -->
+      <div class="course-card" data-level="beginner" data-duration="3">
+        <div class="course-image">
+          <img src="webpics/webdpic2.PNG" alt="Programming Fundamentals">
+          <span class="level-badge beginner">Beginner</span>
+        </div>
+        <div class="course-content">
+          <h3>Programming Fundamentals</h3>
+          <p class="description">Learn core programming concepts with Python as your first language.</p>
+          <div class="course-meta">
+            <span><i class="far fa-clock"></i> 3 Months</span>
+            <span><i class="fas fa-user-graduate"></i> Beginner</span>
+            <span><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <div class="course-actions">
+            <a href="#" class="btn btn-outline">Learn More</a>
+            <a href="#" class="btn btn-primary">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="course-benefits">
+  <div class="container">
+    <h2>What You'll Get With Every Course</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <i class="fas fa-video"></i>
+        <h3>100+ Hours of Content</h3>
+        <p>Comprehensive video lectures, coding exercises, and projects.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-tasks"></i>
+        <h3>Real-World Projects</h3>
+        <p>Build portfolio-worthy projects that demonstrate your skills.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-user-tie"></i>
+        <h3>Career Support</h3>
+        <p>Resume reviews, mock interviews, and job search assistance.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-certificate"></i>
+        <h3>Industry-Recognized Certificate</h3>
+        <p>Earn a certificate to showcase your achievement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>BreakThrough Tech Academy</h3>
+        <p>Empowering the next generation of tech professionals through innovative education.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-envelope"></i> info@breakthroughtech.com</p>
+        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 BreakThrough Tech Academy. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
